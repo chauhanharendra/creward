@@ -415,7 +415,6 @@ input:-webkit-autofill:focus {
     background: url('images/header-bg.jpg') no-repeat scroll center bottom / cover;
     padding-top: 26vh;
     color: #ffffff;
-    margin-bottom: 50px;
 }
 
 .home-area .mobile-image {
@@ -431,8 +430,6 @@ input:-webkit-autofill:focus {
     background-repeat: no-repeat;
     background-position: right center;
     background-size: auto 100%;
-    margin-top: 90px;
-    margin-bottom: 220px;
 }
 
 .progress-area .mobile-image {
@@ -512,10 +509,10 @@ input:-webkit-autofill:focus {
     background: rgb(72, 44, 191);
     /* Old browsers */
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    background: -webkit-linear-gradient(0deg, rgb(0 29 54) 0%, rgb(0 0 0) 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: -o-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
-    background: linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    background: -o-linear-gradient(0deg, rgb(0 29 54) 0%, rgb(0 0 0) 100%);
+    background: linear-gradient(0deg, rgb(0 29 54) 0%, rgb(0 0 0) 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#482cbf', endColorstr='#6ac6f0', GradientType=1);
     overflow: hidden;
@@ -526,6 +523,7 @@ input:-webkit-autofill:focus {
     transition: 0.3s;
     -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+	border: 2px solid #dd5d21;
 }
 
 .team-slide .owl-controls .owl-nav > div:hover,
@@ -561,11 +559,14 @@ input:-webkit-autofill:focus {
 /*-- 12. Testimonial-Area --*/
 
 .testimonial-area {
+	background: url(images/testimonials-bg.jpg);
+	background-size: 100%;
     padding-top: 60px;
     padding-bottom: 120px;
 }
 
 .team-box {
+	background: #fff;
     position: relative;
     padding: 55px 30px 30px 30px;
     -webkit-box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.1);
@@ -629,17 +630,9 @@ input:-webkit-autofill:focus {
 /*-- 13. Gallery-Area --*/
 
 .gallery-area {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#482cbf+0,6ac6f0+100 */
-    background: rgb(72, 44, 191);
-    /* Old browsers */
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: -o-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
-    background: linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#482cbf', endColorstr='#6ac6f0', GradientType=1);
-    /* IE6-9 fallback on horizontal gradient */
+	background: url(images/screenshot-bg.jpg);
+	background-size: 100%;
+    background-attachment: fixed;
     color: #ffffff;
 }
 
@@ -704,11 +697,10 @@ input:-webkit-autofill:focus {
 
 .download-area {
     background-image: url('images/download-bg.png');
+	background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    margin-top: 70px;
-    margin-bottom: 100px;
     color: #ffffff;
 }
 
@@ -720,10 +712,15 @@ input:-webkit-autofill:focus {
 /*-- 15. Price-Area --*/
 
 .price-box {
+	background: #fff;
     border-radius: 5px;
     overflow: hidden;
     text-align: center;
     color: #8790af;
+	border-top: 5px solid #001d36;
+    border-bottom: 3px solid #001d36;
+    border-left: 1px solid #001d3629;
+    border-right: 1px solid #001d3629;
     -webkit-box-shadow: 0 0 15px -5px rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 15px -5px rgba(0, 0, 0, 0.1);
     -webkit-transition: 0.3s;
@@ -744,10 +741,10 @@ input:-webkit-autofill:focus {
     background: rgb(72, 44, 191);
     /* Old browsers */
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    background: -webkit-linear-gradient(45deg, rgb(0 13 25) 0%, rgb(0 85 157) 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: -o-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
-    background: linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    background: -o-linear-gradient(45deg, rgb(0 13 25) 0%, rgb(0 85 157) 100%);
+    background: linear-gradient(45deg, rgb(0 13 25) 0%, rgb(0 85 157) 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#482cbf', endColorstr='#6ac6f0', GradientType=1);
     position: relative;
@@ -794,7 +791,7 @@ input:-webkit-autofill:focus {
 }
 
 .price-box .price-body {
-    padding: 40px;
+    padding: 20px 40px;
 }
 
 .price-box .price-body ul {
@@ -939,10 +936,10 @@ input:-webkit-autofill:focus {
     background: rgb(72, 44, 191);
     /* Old browsers */
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    background: -webkit-linear-gradient(45deg, rgb(0 13 25) 0%, rgb(0 85 157) 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: -o-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
-    background: linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    background: -o-linear-gradient(45deg, rgb(0 13 25) 0%, rgb(0 85 157) 100%);
+    background: linear-gradient(45deg, rgb(0 13 25) 0%, rgb(0 85 157) 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#482cbf', endColorstr='#6ac6f0', GradientType=1);
     border-radius: 100%;
@@ -969,7 +966,7 @@ input:-webkit-autofill:focus {
 }
 
 .footer-box:hover .box-icon {
-    color: #5e88fc;
+    color: #dd5d21;
 }
 
 .footer-box:hover .box-icon:before {
@@ -980,6 +977,7 @@ input:-webkit-autofill:focus {
     padding: 20px 0;
     background-color: #f5f6ff;
     border-top: 1px solid #5e88fc;
+	background: linear-gradient(0deg, rgb(0 29 54) 0%, rgb(0 0 0) 100%);
 }
 
 .footer-bottom .footer-menu ul {
@@ -1027,9 +1025,9 @@ input:-webkit-autofill:focus {
 
 .preloader span {
     background: rgb(72, 44, 191);
-    background: -webkit-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
-    background: -o-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
-    background: linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    background: -webkit-linear-gradient(0deg, rgb(0 29 54) 0%, rgb(0 0 0) 100%);
+    background: -o-linear-gradient(0deg, rgb(0 29 54) 0%, rgb(0 0 0) 100%);
+    background: linear-gradient(0deg, rgb(0 29 54) 0%, rgb(0 0 0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#482cbf', endColorstr='#6ac6f0', GradientType=1);
     border-radius: 100%;
     height: 60px;
@@ -1317,4 +1315,66 @@ input:-webkit-autofill:focus {
 
 .form-double .box.last {
     float: right;
+}
+
+
+/*###### Customized CSS ########*/
+.step-heading{
+	font-weight: 900;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.step-bottom{
+	background-color: rgb(179, 152, 231);
+    border-radius: 12px;
+    height: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 19px;
+}
+
+.step-para{
+	text-align: justify;
+}
+
+
+.trending-offers{
+	background: url(images/trending-offer-bg.jpg);
+	background-size: cover;
+    background-attachment: fixed;
+	padding-top: 60px;
+    padding-bottom: 120px;
+}
+
+
+.responsibility-area{
+	background: url(images/responsibility-bg.jpg);
+	background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.how-it-works{
+	background: url(images/how-it-works-bg.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.footer-area{
+	background: whitesmoke;
+}
+
+.respHeading{
+	font-weight: 600;
+    color: #dd5d21;
+}
+
+.yellow-color{
+	color: #eaa91a;
+	text-transform: uppercase;
+}
+
+.orange-color{
+	color: #dd5d21 !important;
 }

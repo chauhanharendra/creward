@@ -2,9 +2,9 @@
 <html class="no-js" lang="zxx">
   <head>
     <meta charset="utf-8">
-    <meta name="author" content="Sumon Rahman">
+    <meta name="author" content="Creward Admin">
     <meta name="description" content="">
-    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="keywords" content="Creward">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creward</title>
@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+	<script src="https://www.juniper.net/assets/js/jquery/1.4/jquery-1.4.3.min.js"></script>
     <!--[if lt IE 9]>
 <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -90,7 +91,7 @@
   <body data-spy="scroll" data-target=".mainmenu-area">
     <div class="preloader">
       <span>
-        <i class="lnr lnr-sun"></i>
+        <img src="images/logo-icon.png">
       </span>
     </div>
     <nav class="mainmenu-area" data-spy="affix" data-offset-top="200">
@@ -111,33 +112,28 @@
               <a href="#home_page">Home</a>
             </li>
             <li>
-              <a href="#about_page">About</a>
+              <a href="#how_it_work">How It Work</a>
             </li>
             <li>
-              <a href="#features_page">Features</a>
+              <a href="#offers">Offers</a>
+            </li>
+			<li>
+              <a href="#responsibility">Responsibility</a>
+            </li>
+			<li>
+              <a href="#testimonial_page">Testimonial</a>
             </li>
             <li>
               <a href="#gallery_page">Gallery</a>
             </li>
             <li>
-              <a href="#price_page">Pricing</a>
-            </li>
-            <li>
-              <a href="#questions_page">FAQ</a>
-            </li>
-            <li>
-              <a href="blog.html">Blog</a>
-            </li>
-            <li>
               <a href="#contact_page">Contacts</a>
             </li>
           </ul>
-          <div class="right-button hidden-xs">
-            <a href="#">Sign Up</a>
-          </div>
         </div>
       </div>
     </nav>
+	
     <header class="home-area overlay" id="home_page">
       <div class="container">
         <div class="row">
@@ -162,23 +158,125 @@
         </div>
       </div>
     </header>
-    <section class="section-padding" id="about_page" style="padding-top: 0px;">
+	
+	
+	<!--#### How It Work Section #####-->
+	<section class="section-padding price-area how-it-works" id="how_it_work" style="padding-top: 0px;">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-md-10 col-md-offset-1">
-            <div class="page-title text-center">
+          <div class="col-xs-12">
+            <div class="page-title text-center" style="margin-top: 50px;">
               <img src="images/logo-icon.png" alt="About Logo" style="width: 80px;">
               <div class="space-20"></div>
-              <h5 class="title">How It Works</h5>
-              <div class="space-30"></div>
-              <h3 class="blue-color">A beautiful app for consectetur adipisicing elit, sed do eiusmod tempor incididunt ut mollit anim id est laborum. Sedut perspiciatis unde omnis. </h3>
-              <div class="space-20"></div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiing elit, sed do eiusmod tempor incididunt ut labore et laborused sed do eiusmod tempor incididunt ut labore et laborused.</p>
+              <h4 class="title">How It Works</h4>
+              <h4 class="dark-color">CReward is built by credit card enthusiasts for maximising the benefits from credit cards</h4>
+              <div class="space-60"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+			<div class="col-xs-12 col-sm-4">
+				<div class="price-box">
+					<div class="price-header">
+						<img src="images/work-step1.png">
+					</div>
+					<h4 class="upper step-heading">Order For Others</h4>
+					<center>
+						<div class="step-bottom"></div>
+					</center>
+					<div class="price-body">
+						<p class='step-para'>
+							Order for shoppers on shopping platforms using discount available on your card.
+						</p>
+					</div>
+				</div>
+				<div class="space-30 hidden visible-xs"></div>
+			</div>
+			
+			<div class="col-xs-12 col-sm-4">
+				<div class="price-box">
+					<div class="price-header">
+						<img src="images/work-step2.png">
+					</div>
+					<h4 class="upper step-heading">Update Order Details</h4>
+					<center>
+						<div class="step-bottom"></div>
+					</center>
+					<div class="price-body">
+						<p class='step-para'>
+							Update order details, tracking and delivery details on the mobile application.
+						</p>
+					</div>
+				</div>
+				<div class="space-30 hidden visible-xs"></div>
+			</div>
+			
+			<div class="col-xs-12 col-sm-4">
+				<div class="price-box">
+					<div class="price-header">
+						<img src="images/work-step3.png">
+					</div>
+					<h4 class="upper step-heading">Receive Cash</h4>
+					<center>
+						<div class="step-bottom"></div>
+					</center>
+					<div class="price-body">
+						<p class='step-para'>
+							Get cash in your bank account after order is delivered to the shopper using application.
+						</p>
+					</div>
+				</div>
+				<div class="space-30 hidden visible-xs"></div>
+			</div>
+			
+        </div>
+      </div>
+    </section>
+	<!--#### End To How It Work Section #####-->
+	
+	<!--#### Testimonial Section ####-->
+	<section class="trending-offers" id="offers">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="page-title text-center">
+              <h3 class="title">Trending Offers</h3>
+              <h4 class="light-color" style="font-weight: 600;">Check out the latest trending offers and start your rewarding journey</h4>
+              <div class="space-60"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="team-slide" style="padding: 10px;">
+              <div>
+				<img src="images/offers/offer1.png">
+              </div>
+              <div>
+                <img src="images/offers/offer2.png">
+              </div>
+              <div>
+                <img src="images/offers/offer3.png">
+              </div>
+              <div>
+                <img src="images/offers/offer4.png">
+              </div>
+              <div>
+                <img src="images/offers/offer5.png">
+              </div>
+              <div>
+                <img src="images/offers/offer3.png">
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+	<!--#### End To Testimonial Section ####-->
+	
+	
+    
+	
     <section class="progress-area gray-bg" id="progress_page">
       <div class="container">
         <div class="row">
@@ -191,8 +289,6 @@
               <div class="desc wow fadeInUp" data-wow-delay="0.6s">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiing elit, sed do eiusmod tempor incididunt ut labore et laborused sed do eiusmod tempor incididunt ut labore et laborused.</p>
               </div>
-              <div class="space-50"></div>
-              <a href="#" class="bttn-default wow fadeInUp" data-wow-delay="0.8s">Learn More</a>
             </div>
           </div>
           <div class="col-xs-12 col-md-6">
@@ -203,128 +299,93 @@
         </div>
       </div>
     </section>
-    <section class="video-area section-padding">
+	
+	
+	<section class="section-padding responsibility-area" id="responsibility">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-md-6">
-            <div class="video-photo">
-              <img src="images/video-image.jpg" alt="">
-              <a href="https://www.youtube.com/watch?v=ScrDhTsX0EQ" class="popup video-button">
-                <img src="images/play-button.png" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-5 col-md-offset-1">
-            <div class="space-60 hidden visible-xs"></div>
+          <div class="col-xs-12 col-sm-6">
             <div class="page-title">
-              <h5 class="title wow fadeInUp" data-wow-delay="0.2s">VIDEO FEATURES</h5>
+              <h5 class="title wow fadeInUp" data-wow-delay="0.2s">Our Responsibility</h5>
               <div class="space-10"></div>
-              <h3 class="dark-color wow fadeInUp" data-wow-delay="0.4s">Grat Application Ever</h3>
-              <div class="space-20"></div>
-              <div class="desc wow fadeInUp" data-wow-delay="0.6s">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiing elit, sed do eiusmod tempor incididunt ut labore et laborused sed do eiusmod tempor incididunt ut labore et laborused.</p>
+              <h3 class="yellow-color wow fadeInUp" data-wow-delay="0.4s">Built With Your Saftey In Mind</h3>
+            </div>
+            <div class="space-20"></div>
+            <div class="desc wow fadeInUp" data-wow-delay="0.6s">
+              <p>Creward was built keeping cardholders' security and privacy as its top-most priority.</p>
+            </div>
+            <div class="space-20"></div>
+            <img src="images/saftey-lock.png" style="width: 300px;">
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1">
+            <div class="space-60 hidden visible-xs"></div>
+            <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
+              <div class="box-icon">
+                <img src="images/saftey-icons/saftey-icon1.png">
               </div>
-              <div class="space-50"></div>
-              <a href="#" class="bttn-default wow fadeInUp" data-wow-delay="0.8s">Learn More</a>
+              <h4 class="respHeading">No sharing of card details</h4>
+              <p>You never share your credit card details with CReward or anyone else.</p>
+            </div>
+            <div class="space-50"></div>
+            <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
+              <div class="box-icon">
+                <img src="images/saftey-icons/saftey-icon2.png">
+              </div>
+              <h4 class="respHeading">Orders placed on leading e-commerce platforms</h4>
+              <p>All orders are directly placed by you on leading platforms like Amazon, Flipkart.</p>
+            </div>
+            <div class="space-50"></div>
+            <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
+              <div class="box-icon">
+                <img src="images/saftey-icons/saftey-icon3.png">
+              </div>
+              <h4 class="respHeading">Payment secured in wallet</h4>
+              <p>Payment transferred to Creward wallet immediately on placing orders.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="feature-area section-padding-top" id="features_page">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-            <div class="page-title text-center">
-              <h5 class="title">Features</h5>
-              <div class="space-10"></div>
-              <h3>Pwoerful Features As Always</h3>
-              <div class="space-60"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
-              <div class="box-icon">
-                <i class="lnr lnr-rocket"></i>
-              </div>
-              <h4>Fast &amp; Powerful</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-            <div class="space-60"></div>
-            <div class="service-box wow fadeInUp" data-wow-delay="0.4s">
-              <div class="box-icon">
-                <i class="lnr lnr-paperclip"></i>
-              </div>
-              <h4>Easily Editable</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-            <div class="space-60"></div>
-            <div class="service-box wow fadeInUp" data-wow-delay="0.6s">
-              <div class="box-icon">
-                <i class="lnr lnr-cloud-download"></i>
-              </div>
-              <h4>Cloud Storage</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-            <div class="space-60"></div>
-          </div>
-          <div class="hidden-xs hidden-sm col-md-4">
-            <figure class="mobile-image">
-              <img src="images/feature-image.png" alt="Feature Photo">
-            </figure>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
-              <div class="box-icon">
-                <i class="lnr lnr-clock"></i>
-              </div>
-              <h4>Easy Notifications</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-            <div class="space-60"></div>
-            <div class="service-box wow fadeInUp" data-wow-delay="0.4s">
-              <div class="box-icon">
-                <i class="lnr lnr-laptop-phone"></i>
-              </div>
-              <h4>Fully Responsive</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-            <div class="space-60"></div>
-            <div class="service-box wow fadeInUp" data-wow-delay="0.6s">
-              <div class="box-icon">
-                <i class="lnr lnr-cog"></i>
-              </div>
-              <h4>Editable Layout</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-            <div class="space-60"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="testimonial-area" id="testimonial_page">
+	
+	
+	<!--##### Testimonial Section #####-->
+	<section class="testimonial-area" id="testimonial_page">
       <div class="container">
         <div class="row">
           <div class="col-xs-12">
             <div class="page-title text-center">
               <h5 class="title">Testimonials</h5>
-              <h3 class="dark-color">Our Client Loves US</h3>
+              <h3 class="dark-color" style="color: #dd5d21; text-transform: uppercase; font-weight: 600;">Our Client Loves US</h3>
               <div class="space-60"></div>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-xs-12">
-            <div class="team-slide">
+			<div class="team-slide">
+              <div class="team-box">
+                <div class="team-image">
+                  <img src="images/team-2.jpg" alt="">
+                </div>
+                <h4>Shekhar Raman</h4>
+                <h6 class="position">Art Dirrector</h6>
+                <p class="more">CReward is really good I'm using it since 4months and I've earned 20-30k, customer service is good not the best but good it needs improvement but only problem is sometimes payment is delayed but never messed with with payment, because of CReward now I'm owing 9 credit cards for doing transaction earlier I didn't have any card now I've total more than 100 cards including debit card. Thanks to CReward But please improve your customer service and some of delayed payment problem.</p>
+              </div>
+              <div class="team-box">
+                <div class="team-image">
+                  <img src="images/team-3.jpg" alt="">
+                </div>
+                <h4>Kirti Pandey</h4>
+                <h6 class="position">Art Dirrector</h6>
+                <p class="more">Very good app to transfer amount from credit card to bank account without any charge. Rather for placing any shopper’s order, a cash reward is also paid. Much better option than paytm, mobikwik and no broker to transfer amount from credit card to bank account.</p>
+              </div>
               <div class="team-box">
                 <div class="team-image">
                   <img src="images/team-1.png" alt="">
                 </div>
-                <h4>Ashekur Rahman</h4>
+                <h4>Manish Dutta</h4>
                 <h6 class="position">Art Dirrector</h6>
-                <p>Lorem ipsum dolor sit amet, conseg sed do eiusmod temput laborelaborus ed sed do eiusmod tempo.</p>
+                <p class="more">I like the business idea, it definitely works like charm, win win situation for both customer and card holder, Appreciate your hard work team Creward. This app should have option to store credentials for e-commerce site, Hope to see some improvement in app.</p>
               </div>
               <div class="team-box">
                 <div class="team-image">
@@ -332,7 +393,7 @@
                 </div>
                 <h4>Ashekur Rahman</h4>
                 <h6 class="position">Art Dirrector</h6>
-                <p>Lorem ipsum dolor sit amet, conseg sed do eiusmod temput laborelaborus ed sed do eiusmod tempo.</p>
+                <p class="more">I was sceptical at first but decided to try it out. True to their word, this app is a great way to use your credit cardto earn some tiny bit extra cash. The app is seamless and mostly easy to use. But they need to change the way the potential earnings is displayed. It is misleading until you understand it completely The best part is their customer service. I haven't had any issues with them and my money has always come back. Trust them to handle it well. Approachable and trust worthy people!</p>
               </div>
               <div class="team-box">
                 <div class="team-image">
@@ -340,38 +401,41 @@
                 </div>
                 <h4>Ashekur Rahman</h4>
                 <h6 class="position">Art Dirrector</h6>
-                <p>Lorem ipsum dolor sit amet, conseg sed do eiusmod temput laborelaborus ed sed do eiusmod tempo.</p>
-              </div>
-              <div class="team-box">
-                <div class="team-image">
-                  <img src="images/team-1.png" alt="">
-                </div>
-                <h4>Ashekur Rahman</h4>
-                <h6 class="position">Art Dirrector</h6>
-                <p>Lorem ipsum dolor sit amet, conseg sed do eiusmod temput laborelaborus ed sed do eiusmod tempo.</p>
-              </div>
-              <div class="team-box">
-                <div class="team-image">
-                  <img src="images/team-2.jpg" alt="">
-                </div>
-                <h4>Ashekur Rahman</h4>
-                <h6 class="position">Art Dirrector</h6>
-                <p>Lorem ipsum dolor sit amet, conseg sed do eiusmod temput laborelaborus ed sed do eiusmod tempo.</p>
-              </div>
-              <div class="team-box">
-                <div class="team-image">
-                  <img src="images/team-3.jpg" alt="">
-                </div>
-                <h4>Ashekur Rahman</h4>
-                <h6 class="position">Art Dirrector</h6>
-                <p>Lorem ipsum dolor sit amet, conseg sed do eiusmod temput laborelaborus ed sed do eiusmod tempo.</p>
+                <p class="more">Creward is a trusted app where you can earn some money from credit card. I have been here for 1 year.And I have made over 50 thousand rupees. I am very thankful to Creward company for making such an amazing app. And thank you to all the members of the Creward company who are providing such a wonderful service. And on my part, I love the Creward team.❤</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="gallery-area section-padding" id="gallery_page">
+	
+	
+	<!--##### Download App Link Section #####-->
+	<div class="download-area overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 hidden-sm">
+            <figure class="mobile-image">
+              <img src="images/download-image.png" alt="">
+            </figure>
+          </div>
+          <div class="col-xs-12 col-md-6 section-padding">
+            <h3 class="white-color">Download The App</h3>
+            <div class="space-20"></div>
+            <p>Our application is available on playstore and appstore, you can download the application from there.</p>
+            <div class="space-60"></div>
+            <a href="#" class="bttn-white sq">
+              <img src="images/apple-icon.png" alt="apple icon"> Apple Store </a>
+            <a href="#" class="bttn-white sq">
+              <img src="images/play-store-icon.png" alt="Play Store Icon"> Play Store </a>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+	
+	
+    <section class="gallery-area section-padding" id="gallery_page" style="padding-bottom: 50px;">
       <div class="container-fluid">
         <div class="row">
           <div class="col-xs-12 col-sm-6 gallery-slider">
@@ -422,254 +486,22 @@
           </div>
           <div class="col-xs-12 col-sm-5 col-lg-3">
             <div class="page-title">
-              <h5 class="white-color title wow fadeInUp" data-wow-delay="0.2s">Screenshots</h5>
+              <h5 class="orange-color title wow fadeInUp" data-wow-delay="0.2s">Screenshots</h5>
               <div class="space-10"></div>
-              <h3 class="white-color wow fadeInUp" data-wow-delay="0.4s">Screenshot 01</h3>
+              <h3 class="yellow-color wow fadeInUp" data-wow-delay="0.4s">Screenshot 01</h3>
             </div>
             <div class="space-20"></div>
             <div class="desc wow fadeInUp" data-wow-delay="0.6s">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiing elit, sed do eiusmod tempor incididunt ut labore et laborused sed do eiusmod tempor incididunt ut labore et laborused.</p>
-            </div>
-            <div class="space-50"></div>
-            <a href="#" class="bttn-default wow fadeInUp" data-wow-delay="0.8s">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-6">
-            <div class="page-title">
-              <h5 class="title wow fadeInUp" data-wow-delay="0.2s">Our features</h5>
-              <div class="space-10"></div>
-              <h3 class="dark-color wow fadeInUp" data-wow-delay="0.4s">Aour Approach of Design is Prety Simple and Clear</h3>
-            </div>
-            <div class="space-20"></div>
-            <div class="desc wow fadeInUp" data-wow-delay="0.6s">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiing elit, sed do eiusmod tempor incididunt ut labore et laborused sed do eiusmod tempor incididunt ut labore et laborused.</p>
-            </div>
-            <div class="space-50"></div>
-            <a href="#" class="bttn-default wow fadeInUp" data-wow-delay="0.8s">Learn More</a>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1">
-            <div class="space-60 hidden visible-xs"></div>
-            <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
-              <div class="box-icon">
-                <i class="lnr lnr-clock"></i>
-              </div>
-              <h4>Easy Notifications</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-            </div>
-            <div class="space-50"></div>
-            <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
-              <div class="box-icon">
-                <i class="lnr lnr-laptop-phone"></i>
-              </div>
-              <h4>Fully Responsive</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-            </div>
-            <div class="space-50"></div>
-            <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
-              <div class="box-icon">
-                <i class="lnr lnr-cog"></i>
-              </div>
-              <h4>Editable Layout</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+              <p style="color: #333333;">Lorem ipsum dolor sit amet, consectetur adipiing elit, sed do eiusmod tempor incididunt ut labore et laborused sed do eiusmod tempor incididunt ut labore et laborused.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <div class="download-area overlay">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-6 hidden-sm">
-            <figure class="mobile-image">
-              <img src="images/download-image.png" alt="">
-            </figure>
-          </div>
-          <div class="col-xs-12 col-md-6 section-padding">
-            <h3 class="white-color">Download The App</h3>
-            <div class="space-20"></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam possimus eaque magnam eum praesentium unde.</p>
-            <div class="space-60"></div>
-            <a href="#" class="bttn-white sq">
-              <img src="images/apple-icon.png" alt="apple icon"> Apple Store </a>
-            <a href="#" class="bttn-white sq">
-              <img src="images/play-store-icon.png" alt="Play Store Icon"> Play Store </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <section class="section-padding price-area" id="price_page">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="page-title text-center">
-              <h5 class="title">Pricing Plan</h5>
-              <h3 class="dark-color">Our Awesome Pricing Plan</h3>
-              <div class="space-60"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-4">
-            <div class="price-box">
-              <div class="price-header">
-                <div class="price-icon">
-                  <span class="lnr lnr-rocket"></span>
-                </div>
-                <h4 class="upper">Free</h4>
-              </div>
-              <div class="price-body">
-                <ul>
-                  <li>Easy Installations</li>
-                  <li>Unlimited support</li>
-                  <li>Uniqe Elements</li>
-                </ul>
-              </div>
-              <div class="price-rate">
-                <sup>&#36;</sup>
-                <span class="rate">0</span>
-                <small>/Month</small>
-              </div>
-              <div class="price-footer">
-                <a href="#" class="bttn-white">Purchase</a>
-              </div>
-            </div>
-            <div class="space-30 hidden visible-xs"></div>
-          </div>
-          <div class="col-xs-12 col-sm-4">
-            <div class="price-box">
-              <div class="price-header">
-                <div class="price-icon">
-                  <span class="lnr lnr-diamond"></span>
-                </div>
-                <h4 class="upper">Medium</h4>
-              </div>
-              <div class="price-body">
-                <ul>
-                  <li>Easy Installations</li>
-                  <li>Unlimited support</li>
-                  <li>Free Forever</li>
-                </ul>
-              </div>
-              <div class="price-rate">
-                <sup>&#36;</sup>
-                <span class="rate">49</span>
-                <small>/Month</small>
-              </div>
-              <div class="price-footer">
-                <a href="#" class="bttn-white">Purchase</a>
-              </div>
-            </div>
-            <div class="space-30 hidden visible-xs"></div>
-          </div>
-          <div class="col-xs-12 col-sm-4">
-            <div class="price-box">
-              <div class="price-header">
-                <div class="price-icon">
-                  <span class="lnr lnr-pie-chart"></span>
-                </div>
-                <h4 class="upper">Business</h4>
-              </div>
-              <div class="price-body">
-                <ul>
-                  <li>Easy Installations</li>
-                  <li>Unlimited support</li>
-                  <li>Free Forever</li>
-                </ul>
-              </div>
-              <div class="price-rate">
-                <sup>&#36;</sup>
-                <span class="rate">99</span>
-                <small>/Month</small>
-              </div>
-              <div class="price-footer">
-                <a href="#" class="bttn-white">Purchase</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="questions_page" class="questions-area section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="page-title text-center">
-              <h5 class="title">FAQ</h5>
-              <h3 class="dark-color">Frequently Asked Questions</h3>
-              <div class="space-60"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-6">
-            <div class="toggole-boxs">
-              <h3>Faq first question goes here? </h3>
-              <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-              </div>
-              <h3>About freewuent question goes here? </h3>
-              <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-              </div>
-              <h3>Why more question goes here? </h3>
-              <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-              </div>
-              <h3>What question goes here? </h3>
-              <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6">
-            <div class="space-20 hidden visible-xs"></div>
-            <div class="toggole-boxs">
-              <h3>Faq second question goes here? </h3>
-              <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-              </div>
-              <h3>Third faq question goes here? </h3>
-              <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-              </div>
-              <h3>Why more question goes here? </h3>
-              <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-              </div>
-              <h3>Seventh frequent question here? </h3>
-              <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="subscribe-area section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-            <div class="subscribe-form text-center">
-              <h3 class="blue-color">Subscribe for More Features</h3>
-              <div class="space-20"></div>
-              <form id="mc-form">
-                <input type="email" class="control" placeholder="Enter your email" required="required" id="mc-email">
-                <button class="bttn-white active" type="submit">
-                  <span class="lnr lnr-location"></span> Subscribe </button>
-                <label class="mt10" for="mc-email"></label>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    
+    
     <footer class="footer-area" id="contact_page">
-      <div class="section-padding">
+      <div class="section-padding" style="padding-top: 70px; padding-bottom: 70px;">
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
@@ -686,7 +518,7 @@
                 <div class="box-icon">
                   <span class="lnr lnr-map-marker"></span>
                 </div>
-                <p>8-54 Paya Lebar Square <br /> 60 Paya Lebar Roa SG, Singapore </p>
+                <p>1051-1051, 10th floor, Galaxy Diamond Plaza <br/> Greater Noida West, Sector-4 (Uttar Pradesh)</p>
               </div>
               <div class="space-30 hidden visible-xs"></div>
             </div>
@@ -695,7 +527,7 @@
                 <div class="box-icon">
                   <span class="lnr lnr-phone-handset"></span>
                 </div>
-                <p>+65 93901336 <br /> +65 93901337 </p>
+                <p><a href='tel:9926970136'>+91 9926970136</a> <br /><a href='tel:8130676564'>+91 8130676564</a></p>
               </div>
               <div class="space-30 hidden visible-xs"></div>
             </div>
@@ -705,15 +537,16 @@
                   <span class="lnr lnr-envelope"></span>
                 </div>
                 <p>
-                  <a href="https://preview.colorlib.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="81f8eef4f3ece0e8edc1e6ece0e8edafe2eeec">[email&#160;protected]</a>
+                  <a href="mailto:goluchauhan1993@gmail.com" class="__cf_email__" data-cfemail="81f8eef4f3ece0e8edc1e6ece0e8edafe2eeec">[goluchauhan1993@gmail.com]</a>
                   <br />
-                  <a href="https://preview.colorlib.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="274546444c574e5742550944484a67404a464e4b0944484a">[email&#160;protected]</a>
+                  <a href="mailto:chauhankushamoday@gmail.com" class="__cf_email__" data-cfemail="274546444c574e5742550944484a67404a464e4b0944484a">[chauhankushamoday@gmail.com]</a>
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
+	  
       <div class="footer-bottom">
         <div class="container">
           <div class="row">
@@ -721,7 +554,7 @@
               <span>Copyright &copy; <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
                 <script>
                   document.write(new Date().getFullYear());
-                </script> All rights reserved | This template is made with <i class="lnr lnr-heart" aria-hidden="true"></i> by <a href="https://colorlib.com/" target="_blank">Colorlib</a>
+                </script> All rights reserved.
               </span>
               <div class="space-30 hidden visible-xs"></div>
             </div>
@@ -729,22 +562,22 @@
               <div class="footer-menu">
                 <ul>
                   <li>
-                    <a href="#">About</a>
+                    <a href="#home_page">Home</a>
                   </li>
                   <li>
-                    <a href="#">Services</a>
+                    <a href="#how_it_work">How It Work</a>
                   </li>
                   <li>
-                    <a href="#">Features</a>
+                    <a href="#offers">Offers</a>
                   </li>
                   <li>
-                    <a href="#">Pricing</a>
+                    <a href="#responsibility">Responsibility</a>
                   </li>
                   <li>
-                    <a href="#">Testimonial</a>
+                    <a href="#testimonial_page">Testimonial</a>
                   </li>
                   <li>
-                    <a href="#">Contacts</a>
+                    <a href="#contact_page">Contacts</a>
                   </li>
                 </ul>
               </div>
@@ -753,6 +586,59 @@
         </div>
       </div>
     </footer>
+	
+	
+	<style>
+		.more{
+			text-align: justify;
+		}
+		.morecontent span {
+			display: none;
+		}
+		.morelink {
+			display: block;
+		}
+	</style>
+	
+	
+	<script>
+		$(document).ready(function() {
+			var showChar = 200;
+			var ellipsestext = "";
+			var moretext = "Read More";
+			var lesstext = "Read Less";
+			
+			$('.more').each(function() {
+				var content = $(this).html();
+		 
+				if(content.length > showChar) {
+		 
+					var c = content.substr(0, showChar);
+					var h = content.substr(showChar, content.length - showChar);
+		 
+					var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+		 
+					$(this).html(html);
+				}
+		 
+			});
+		 
+			$(".morelink").click(function(){
+				if($(this).hasClass("less")) {
+					$(this).removeClass("less");
+					$(this).html(moretext);
+				} else {
+					$(this).addClass("less");
+					$(this).html(lesstext);
+				}
+				$(this).parent().prev().toggle();
+				$(this).prev().toggle();
+				return false;
+			});
+		});
+	</script>
+	
+	
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <script src="js/vendor/jquery-ui.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
