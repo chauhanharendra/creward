@@ -130,6 +130,10 @@
               <a href="#contact_page">Contacts</a>
             </li>
           </ul>
+		  
+			<div class="right-button hidden-xs">
+				<a href="#comment_page">Post Comment</a>
+			</div>
         </div>
       </div>
     </nav>
@@ -499,6 +503,43 @@
       </div>
     </section>
     
+	<div class="section-padding comments-section" id="comment_page">
+         <div class="container">
+            <div class="row">
+               <div class="col-xs-12">
+					<div id="comments" class="comments-area">
+						<div class="comment-respond">
+							
+							<h4 style="font-size: 24px;">Post your comments</h4>
+							
+							<p id="queryform_response" class="queryform-response" style="display: none;"></p>
+							
+							<form action="#" class="comment-form" name="queryform" id="queryform" method="post">
+							  <div class="form-double">
+								 <div class="box">
+									<input type="text" class="form-control" name="name" id="name" placeholder="Your Name" autocomplete="off">
+									<div class="space-30"></div>
+								 </div>
+								 <div class="box last">
+									<input type="text" class="form-control" name="mobile" id="mobile" placeholder="Your Mobile" autocomplete="off">
+									<div class="space-30"></div>
+								 </div>
+							  </div>
+							  
+							  <input type="email" class="form-control" name="emailid" id="emailid" placeholder="Your Email" autocomplete="off">
+							  
+							  <div class="space-30"></div>
+							  
+							  <textarea name="comment" id="comment" rows="5" class="form-control" placeholder="Type Your Mesage..."></textarea>
+							  <div class="space-30"></div>
+							  <button type="submit" name="submit" class="bttn-default">Post Comments</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
     
     <footer class="footer-area" id="contact_page">
       <div class="section-padding" style="padding-top: 70px; padding-bottom: 70px;">
@@ -581,6 +622,9 @@
                   <li>
                     <a href="#contact_page">Contacts</a>
                   </li>
+				  <li>
+                    <a href="term_and_conditions.html">Term & Conditions</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -589,6 +633,39 @@
       </div>
     </footer>
 	
+	<a href="https://api.whatsapp.com/send?phone=919926970136&text=Hi%20*CReward*,%20I%20want%20to%20show%20the%20interest%20in%20your%20application." class="float" target="_blank">
+		<i class="fa fa-whatsapp my-float" style="font-size: 35px !important; margin: 7px;"></i>
+    </a>
+
+	<style>
+		.float{
+			position: fixed;
+			width: 50px;
+			height: 50px;
+			bottom: 10px;
+			left: 5px;
+			background-color: #25d366;
+			color: #FFF;
+			border-radius: 50px;
+			text-align: center;
+			font-size: 30px;
+			z-index: 100;
+			box-shadow: 0px 0px 4px black;
+		}
+		
+		.my-float{
+			margin-top:16px;
+		}
+		
+		.my-float:hover{
+			margin-top:16px;
+		}
+		
+		.float:hover{
+			color: #dd5d21 !important;
+		}
+	</style>
+
 
 	<style>
 		.more{
@@ -600,9 +677,6 @@
 		.morelink {
 			display: block;
 		}
-
-
-
 	</style>
 	
 	
@@ -641,9 +715,57 @@
 				return false;
 			});
 		});
+		
+		
+		$("#queryform").submit(function(event){
+			event.preventDefault();
+		 	var name		=	$('#name').val();
+			var mobile		=	$('#mobile').val();
+			var emailid		=	$('#emailid').val();
+			var comment		=	$('#comment').val();
+		    var action_type	=	"COMMENT_SECTION";
+			
+			//alert('Name: '+name+', Mobile: '+mobile+', Email: '+emailid+', Comment: '+comment+', Action Type: '+action_type);
+			
+			//return false;
+			if(name!='' && mobile!='')
+			{
+				$.ajax({
+					type: "POST",
+					url:  'mail.php',
+					data: {'name':name, 'mobile':mobile, 'emailid':emailid, 'comment':comment,'action_type':action_type},
+					success: function(response){
+						
+						if(response=='SUCCESS')
+						{
+							$('#queryform_response').css('background','#4CAF50');
+							$('#queryform_response').html('Thanks for your comment, our team will contact you soon.');
+							$('#queryform_response').show();
+							$('#queryform_response').delay(5000).fadeOut('slow');
+							
+						}else{
+							$('#queryform_response').css('background','#FA4032');
+							$('#queryform_response').html('Something went wrong, please try agian after sometime...!');
+							$('#queryform_response').show();
+							$('#queryform_response').delay(5000).fadeOut('slow');
+						}
+						
+						$('#name').val('');
+						$('#mobile').val('');
+						$('#emailid').val('');
+						$('#comment').val('');
+					}
+				});
+			}else{
+				$('#queryform_response').css('background','#FA812F');
+				$('#queryform_response').html('Please fill the form, then click to post comment!');
+				$('#queryform_response').show();
+				$('#queryform_response').delay(5000).fadeOut('slow');
+			}
+	    });
 	</script>
 	
-	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <script src="js/vendor/jquery-ui.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
@@ -666,5 +788,4 @@
     </script>
     <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"77e8de5f6838339c","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2022.11.3","si":100}' crossorigin="anonymous"></script>
   </body>
-  <!-- Mirrored from preview.colorlib.com/theme/appy/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 Dec 2022 11:07:04 GMT -->
 </html>
